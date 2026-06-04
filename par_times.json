@@ -1,0 +1,372 @@
+{
+  "福島": {
+    "1200": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1400": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1600": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1800": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    }
+  },
+  "新潟": {
+    "1200": {
+      "良": {
+        "median_sec": 71.7,
+        "median_str": "1:11.7",
+        "sample_n": 50
+      },
+      "稍重": {
+        "median_sec": 71.7,
+        "median_str": "1:11.7",
+        "sample_n": 50
+      },
+      "重": {
+        "median_sec": 71.0,
+        "median_str": "1:11.0",
+        "sample_n": 18
+      },
+      "不良": {
+        "median_sec": 71.3,
+        "median_str": "1:11.3",
+        "sample_n": 6
+      }
+    },
+    "1400": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1600": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1800": {
+      "良": null,
+      "稍重": {
+        "median_sec": 113.9,
+        "median_str": "1:53.9",
+        "sample_n": 68
+      },
+      "重": {
+        "median_sec": 113.2,
+        "median_str": "1:53.2",
+        "sample_n": 16
+      },
+      "不良": {
+        "median_sec": 112.6,
+        "median_str": "1:52.6",
+        "sample_n": 10
+      }
+    }
+  },
+  "東京": {
+    "1200": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1400": {
+      "良": {
+        "median_sec": 85.0,
+        "median_str": "1:25.0",
+        "sample_n": 50
+      },
+      "稍重": {
+        "median_sec": 84.5,
+        "median_str": "1:24.5",
+        "sample_n": 50
+      },
+      "重": {
+        "median_sec": 83.6,
+        "median_str": "1:23.6",
+        "sample_n": 45
+      },
+      "不良": {
+        "median_sec": 84.2,
+        "median_str": "1:24.2",
+        "sample_n": 21
+      }
+    },
+    "1600": {
+      "良": {
+        "median_sec": 97.7,
+        "median_str": "1:37.7",
+        "sample_n": 50
+      },
+      "稍重": {
+        "median_sec": 97.4,
+        "median_str": "1:37.4",
+        "sample_n": 84
+      },
+      "重": {
+        "median_sec": 95.9,
+        "median_str": "1:35.9",
+        "sample_n": 50
+      },
+      "不良": null
+    },
+    "1800": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    }
+  },
+  "中山": {
+    "1200": {
+      "良": {
+        "median_sec": 72.1,
+        "median_str": "1:12.1",
+        "sample_n": 50
+      },
+      "稍重": {
+        "median_sec": 71.8,
+        "median_str": "1:11.8",
+        "sample_n": 100
+      },
+      "重": {
+        "median_sec": 71.3,
+        "median_str": "1:11.3",
+        "sample_n": 54
+      },
+      "不良": null
+    },
+    "1400": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1600": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1800": {
+      "良": {
+        "median_sec": 114.9,
+        "median_str": "1:54.9",
+        "sample_n": 100
+      },
+      "稍重": {
+        "median_sec": 114.6,
+        "median_str": "1:54.6",
+        "sample_n": 50
+      },
+      "重": {
+        "median_sec": 113.8,
+        "median_str": "1:53.8",
+        "sample_n": 56
+      },
+      "不良": {
+        "median_sec": 113.5,
+        "median_str": "1:53.5",
+        "sample_n": 32
+      }
+    }
+  },
+  "中京": {
+    "1200": {
+      "良": {
+        "median_sec": 72.1,
+        "median_str": "1:12.1",
+        "sample_n": 50
+      },
+      "稍重": {
+        "median_sec": 71.9,
+        "median_str": "1:11.9",
+        "sample_n": 20
+      },
+      "重": {
+        "median_sec": 71.2,
+        "median_str": "1:11.2",
+        "sample_n": 18
+      },
+      "不良": {
+        "median_sec": 71.5,
+        "median_str": "1:11.5",
+        "sample_n": 7
+      }
+    },
+    "1400": {
+      "良": null,
+      "稍重": {
+        "median_sec": 85.1,
+        "median_str": "1:25.1",
+        "sample_n": 31
+      },
+      "重": null,
+      "不良": {
+        "median_sec": 84.8,
+        "median_str": "1:24.8",
+        "sample_n": 17
+      }
+    },
+    "1600": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1800": {
+      "良": {
+        "median_sec": 113.8,
+        "median_str": "1:53.8",
+        "sample_n": 50
+      },
+      "稍重": null,
+      "重": {
+        "median_sec": 112.4,
+        "median_str": "1:52.4",
+        "sample_n": 27
+      },
+      "不良": {
+        "median_sec": 112.5,
+        "median_str": "1:52.5",
+        "sample_n": 20
+      }
+    }
+  },
+  "京都": {
+    "1200": {
+      "良": {
+        "median_sec": 72.4,
+        "median_str": "1:12.4",
+        "sample_n": 100
+      },
+      "稍重": null,
+      "重": null,
+      "不良": {
+        "median_sec": 70.7,
+        "median_str": "1:10.7",
+        "sample_n": 9
+      }
+    },
+    "1400": {
+      "良": {
+        "median_sec": 85.0,
+        "median_str": "1:25.0",
+        "sample_n": 100
+      },
+      "稍重": {
+        "median_sec": 84.9,
+        "median_str": "1:24.9",
+        "sample_n": 43
+      },
+      "重": {
+        "median_sec": 84.0,
+        "median_str": "1:24.0",
+        "sample_n": 23
+      },
+      "不良": {
+        "median_sec": 83.5,
+        "median_str": "1:23.5",
+        "sample_n": 8
+      }
+    },
+    "1600": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1800": {
+      "良": {
+        "median_sec": 113.5,
+        "median_str": "1:53.5",
+        "sample_n": 50
+      },
+      "稍重": {
+        "median_sec": 113.6,
+        "median_str": "1:53.6",
+        "sample_n": 50
+      },
+      "重": {
+        "median_sec": 112.1,
+        "median_str": "1:52.1",
+        "sample_n": 43
+      },
+      "不良": null
+    }
+  },
+  "阪神": {
+    "1200": {
+      "良": {
+        "median_sec": 72.7,
+        "median_str": "1:12.7",
+        "sample_n": 50
+      },
+      "稍重": {
+        "median_sec": 72.3,
+        "median_str": "1:12.3",
+        "sample_n": 47
+      },
+      "重": {
+        "median_sec": 71.4,
+        "median_str": "1:11.4",
+        "sample_n": 21
+      },
+      "不良": {
+        "median_sec": 71.7,
+        "median_str": "1:11.7",
+        "sample_n": 18
+      }
+    },
+    "1400": {
+      "良": null,
+      "稍重": {
+        "median_sec": 85.0,
+        "median_str": "1:25.0",
+        "sample_n": 57
+      },
+      "重": null,
+      "不良": {
+        "median_sec": 84.2,
+        "median_str": "1:24.2",
+        "sample_n": 16
+      }
+    },
+    "1600": {
+      "良": null,
+      "稍重": null,
+      "重": null,
+      "不良": null
+    },
+    "1800": {
+      "良": {
+        "median_sec": 113.9,
+        "median_str": "1:53.9",
+        "sample_n": 50
+      },
+      "稍重": {
+        "median_sec": 113.6,
+        "median_str": "1:53.6",
+        "sample_n": 36
+      },
+      "重": null,
+      "不良": null
+    }
+  }
+}
