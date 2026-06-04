@@ -1,0 +1,18 @@
+{
+  "horse_name": "ボクマダネムイヨ",
+  "horse_name_en": "Boku Mada Nemuiyo",
+  "horse_id": "2023102553",
+  "sex": "牡",
+  "age": 3,
+  "trainer": "東田明士",
+  "stable": "西",
+  "owner": "小田切光",
+  "career_summary": {
+    "total": 6,
+    "wins": 2,
+    "places": 4,
+    "last_updated": "2026/05/24"
+  },
+  "preferred_distance": "ダート1800〜1900m",
+  "notes": ""
+}
