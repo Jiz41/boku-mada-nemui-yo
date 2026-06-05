@@ -536,7 +536,7 @@ async function sendMessage(userText) {
   try {
     const res = await fetch(GAS_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "text/plain" },
       body: JSON.stringify({ systemInstruction, messages }),
     });
     const data = await res.json();
