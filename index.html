@@ -224,6 +224,32 @@
   #send-btn:active { transform: scale(0.94); }
   #send-btn:disabled { opacity: 0.35; cursor: default; }
 
+  /* ──────── DEBUG PANEL ──────── */
+  #debug-btn {
+    display: block; margin: 4px auto 0;
+    background: none; border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px; padding: 3px 10px;
+    font-size: 0.68rem; color: rgba(255,255,255,0.35);
+    cursor: pointer; transition: border-color 0.2s, color 0.2s;
+  }
+  #debug-btn:hover { border-color: rgba(255,255,255,0.4); color: rgba(255,255,255,0.6); }
+  #debug-panel {
+    display: none; margin: 0 12px 6px;
+    background: rgba(0,0,0,0.45); border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px; padding: 10px 12px;
+    font-size: 0.72rem; line-height: 1.7; color: rgba(255,255,255,0.6);
+  }
+  #debug-panel.show { display: block; }
+  #debug-panel .di { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid rgba(255,255,255,0.07); padding: 2px 0; }
+  #debug-panel .di:last-child { border-bottom: none; }
+  #debug-panel .dk { color: rgba(255,255,255,0.38); }
+  #debug-panel .dv { font-weight: 600; }
+  #debug-panel .ok { color: #4eff9a; }
+  #debug-panel .ng { color: #ff6060; }
+  #debug-files { margin-top: 6px; max-height: 120px; overflow-y: auto; }
+  #debug-files li { font-size: 0.67rem; color: rgba(255,255,255,0.45); padding: 1px 0; list-style: none; }
+  #debug-files li::before { content: '📄 '; }
+
   /* ──────── ERROR BANNER ──────── */
   #error-banner {
     margin: 8px 12px 0;
@@ -245,7 +271,16 @@
   <header>
     <h1>📚 キショー＆アサヒの予想教室</h1>
     <p>ボクマダネムイヨ応援部屋 ― 放課後の黒板前</p>
+    <button id="debug-btn" onclick="toggleDebug()">📊 データ状況</button>
   </header>
+  <div id="debug-panel">
+    <div class="di"><span class="dk">systemInstruction</span><span class="dv" id="dbg-len">—</span></div>
+    <div class="di"><span class="dk">出走表データ含有</span><span class="dv" id="dbg-entries">—</span></div>
+    <div class="di" style="flex-direction:column;align-items:flex-start;">
+      <span class="dk">読み込んだファイル</span>
+      <ul id="debug-files"></ul>
+    </div>
+  </div>
 
   <div id="char-bar">
     <div class="char-card kisho">
@@ -577,9 +612,7 @@ async function init() {
     const fetched = await loadAllData();
     setLoadStatus("systemInstruction 構築中…");
     systemInstruction = buildSystemInstruction(fetched);
-    console.log("[SYS] length:", systemInstruction.length);
-    console.log("[SYS] entries included:", systemInstruction.includes("出走情報"));
-    console.log("[SYS] preview:\n", systemInstruction.slice(0, 500));
+    updateDebugPanel(fetched);
 
     document.getElementById("loading").classList.add("hidden");
     document.getElementById("user-input").disabled = false;
@@ -599,6 +632,28 @@ async function init() {
   } catch (err) {
     setLoadStatus("読み込みエラー: " + err.message);
   }
+}
+
+// ──────── DEBUG PANEL ────────
+function updateDebugPanel(fetched) {
+  const hasEntries = systemInstruction.includes("出走情報");
+  document.getElementById("dbg-len").textContent = systemInstruction.length.toLocaleString() + " 文字";
+  const el = document.getElementById("dbg-entries");
+  el.textContent = hasEntries ? "✅ あり" : "❌ なし";
+  el.className = "dv " + (hasEntries ? "ok" : "ng");
+  const ul = document.getElementById("debug-files");
+  ul.innerHTML = "";
+  Object.keys(fetched).sort().forEach(path => {
+    const li = document.createElement("li");
+    const ok = fetched[path] !== null;
+    li.textContent = (ok ? "" : "⚠️ ") + path;
+    if (!ok) li.style.color = "#ff9060";
+    ul.appendChild(li);
+  });
+}
+
+function toggleDebug() {
+  document.getElementById("debug-panel").classList.toggle("show");
 }
 
 // ──────── EVENTS ────────
